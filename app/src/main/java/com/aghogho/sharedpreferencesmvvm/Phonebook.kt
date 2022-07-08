@@ -1,4 +1,7 @@
 package com.aghogho.sharedpreferencesmvvm
 
-class Phonebook {
-}
+data class Phonebook (
+    val name: String,
+    val address: String,
+    val phone: String
+)
