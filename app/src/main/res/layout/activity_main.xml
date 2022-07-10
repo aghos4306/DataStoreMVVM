@@ -162,7 +162,7 @@
                 android:layout_margin="16dp"
                 android:layout_width="match_parent"
                 android:text="Get"
-                android:onClick="@{() ->viewModel.retrieveDate()}"
+                android:onClick="@{() ->viewModel.retrieveData()}"
                 android:layout_height="wrap_content" />
 
 

@@ -30,9 +30,9 @@ class ImplRepository(
         }
     }
 
-    override suspend fun getPhoneBook(): Flow<Phonebook> = context.datastore.data.map { phonebook ->
+    override suspend fun getPhoneBook() = context.datastore.data.map { phonebook ->
         Phonebook(
-            name = phonebook[NAME]?: "",
+            name = phonebook[NAME]!!,
             address = phonebook[ADDRESS]?: "",
             phone = phonebook[PHONE_NUMBER]?: ""
         )
